@@ -1,0 +1,229 @@
+@import "gilroy.css";
+* {
+  box-sizing: border-box;
+  font-family: "Gilroy-Regular", sans-serif;
+}
+
+.header {
+  background: rgba(50, 11, 97, 0.8);
+  height: 858px;
+  position: relative;
+}
+.header .container {
+  position: relative;
+}
+.header-background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-background__element {
+  position: absolute;
+}
+.header-background__element_left {
+  top: 516px;
+  left: 15px;
+}
+.header-background__element_right {
+  top: 630px;
+  right: 15px;
+}
+.header__description {
+  margin: 0 auto;
+  padding-top: 25px;
+  width: 920px;
+  display: grid;
+  grid-template-columns: 68px 837px;
+  grid-column-gap: 15px;
+}
+.header__description-text {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+}
+.header__logo {
+  height: 68px;
+  width: 68px;
+}
+.header__title {
+  margin-top: 36px;
+}
+.header__title h1 {
+  font-size: 50px;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+}
+.header__title hr {
+  border: 1px solid #FAD264;
+  width: 83px;
+  margin-top: 26px;
+  margin-bottom: 0;
+}
+.header__text {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 26px;
+  width: 730px;
+}
+.header__items {
+  max-width: 920px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.header__item {
+  width: 285px;
+  height: 125px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  position: relative;
+}
+.header__item:before {
+  position: absolute;
+  content: url("../img/star.svg");
+  top: -22px;
+  left: calc(50% - 22px);
+}
+.header__date {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 636px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #fff;
+}
+.header__date img {
+  margin-right: 23px;
+}
+.header__form {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 21px;
+}
+.header__form-element {
+  width: 254px;
+  height: 56px;
+  text-align: center;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border: none;
+}
+.header__input {
+  background: #FFFFFF;
+}
+.header__input:focus {
+  outline: none;
+}
+.header__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(76deg, #FAD264 45%, #FCE558 70%);
+  color: #000;
+}
+.header__button:hover {
+  text-decoration: none;
+  color: #000;
+  background: linear-gradient(76deg, #FCE558 45%, #FAD264 70%);
+}
+.header__motivation {
+  margin-top: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__motivation img {
+  width: 58px;
+}
+.header__motivation-text {
+  width: 468px;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.text_yellow {
+  color: #FCE558;
+}
+.text_uppercase {
+  text-transform: uppercase;
+}
+.text_bold {
+  font-weight: 700;
+}
+
+.toggle {
+  position: relative;
+  display: flex;
+  height: 24px;
+  margin-top: 20px;
+}
+.toggle__label {
+  color: #FFFFFF;
+}
+.toggle__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.toggle__input + span {
+  display: block;
+  position: relative;
+  padding: 0 0 4px 50px;
+  user-select: none;
+  line-height: 20px;
+}
+.toggle__input + span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 13px;
+  box-sizing: inherit;
+  transition: 0.2s;
+}
+.toggle__input + span:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.25);
+  transition: 0.2s;
+}
+.toggle__input:checked + span:before {
+  border: 1px solid #FAD264;
+}
+.toggle__input:checked + span:after {
+  left: 24px;
+  background: linear-gradient(76deg, #FAD264 45%, #FCE558 70%);
+}
+
+/*# sourceMappingURL=style.css.map */
