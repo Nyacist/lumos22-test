@@ -294,13 +294,13 @@
     margin-bottom: 23px;
   }
 
-  &__card{
+  &__card {
 
-    &:first-child{
+    &:first-child {
       margin-bottom: 155px;
     }
 
-    &:nth-child(2){
+    &:nth-child(2) {
       margin-bottom: 45px;
     }
   }
@@ -390,12 +390,12 @@
       line-height: 22px;
     }
 
-    ul{
+    ul {
       padding: 0;
       margin: 0;
     }
 
-    li{
+    li {
       font-size: 18px;
       line-height: 21px;
 
@@ -417,6 +417,102 @@
         background: #42196D;
         left: 0;
         top: 5px;
+      }
+    }
+  }
+}
+
+.reason {
+  background: #42196D;
+  color: #FFFFFF;
+
+  .container {
+    padding-top: 82px;
+    padding-bottom: 94px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 44px;
+    color: #FAD264;
+  }
+
+  hr {
+    border: 1px solid #FFFFFF;
+    width: 70px;
+    margin-top: 39px;
+    margin-bottom: 63px;
+  }
+
+  &__column {
+    width: 349px;
+  }
+
+  &__description {
+    position: relative;
+    background: #fff;
+    color: #292841;
+    padding-top: 33px;
+    padding-bottom: 24px;
+    margin-bottom: 22px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    display: grid;
+    grid-template-rows: 88px 84px;
+    grid-row-gap: 17px;
+
+    text-align: center;
+
+    h6{
+      font-size: 18px;
+      line-height: 22px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &:after{
+      position: absolute;
+      content: url("../img/arrowBottom.svg");
+      left: calc(50% - 24px);
+      bottom: -22px;
+    }
+  }
+
+  &__result{
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    p{
+      margin-bottom: 13px;
+    }
+
+    ul{
+      padding: 0;
+      margin: 0;
+    }
+    li{
+      list-style-type: none;
+      position: relative;
+      text-align: left;
+      padding-left: 50px;
+      padding-top: 4px;
+      min-height: 30px;
+
+      &:before{
+        content: url("../img/resultCheck.svg");
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      &:not(:last-child){
+        margin-bottom: 17px;
       }
     }
   }
